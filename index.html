@@ -1,9 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REN BİLİŞİM</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: white;
+    }
+    .hero {
+      background: linear-gradient(to right, #3a3a3a, #6b6b6b);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .service {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-top: 0;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact input, .contact textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 10px 20px;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background-color: #333;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<header>
+  <h1>REN BİLİŞİM</h1>
+  <nav>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Dijital Geleceğinizi Birlikte İnşa Edelim</h1>
+  <p>REN BİLİŞİM olarak yazılım geliştirme, web tasarımı, mobil uygulama çözümleri ve daha fazlasıyla dijital dönüşümünüze katkı sağlıyoruz.</p>
+</section>
+
+<section id="hakkimizda" class="section">
+  <h2>Hakkımızda</h2>
+  <p>REN BİLİŞİM; yenilikçi, güvenilir ve kullanıcı odaklı teknolojik çözümler sunan bir bilişim firmasıdır. Profesyonel ekibimizle yazılım geliştirme, danışmanlık ve dijital pazarlama alanlarında hizmet veriyoruz.</p>
+</section>
+
+<section id="hizmetler" class="section">
+  <h2>Hizmetlerimiz</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Web Geliştirme</h3>
+      <p>Modern ve mobil uyumlu web siteleriyle markanızı dijital dünyaya taşıyoruz.</p>
+    </div>
+    <div class="service">
+      <h3>Mobil Uygulamalar</h3>
+      <p>iOS ve Android platformlarında çalışan kullanıcı dostu mobil uygulamalar geliştiriyoruz.</p>
+    </div>
+    <div class="service">
+      <h3>Yazılım Danışmanlığı</h3>
+      <p>İşletmenizin ihtiyaçlarına özel yazılım çözümleri sunarak süreçlerinizi optimize ediyoruz.</p>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" class="section contact">
+  <h2>İletişim</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Adınız Soyadınız" required />
+    <input type="email" placeholder="E-posta Adresiniz" required />
+    <textarea rows="5" placeholder="Mesajınız" required></textarea>
+    <br/>
+    <button type="submit">Gönder</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 REN BİLİŞİM | Tüm hakları saklıdır.
+</footer>
+
+<script>
+  function submitForm(e) {
+    e.preventDefault();
+    alert("Mesajınız başarıyla gönderildi. Teşekkür ederiz!");
+  }
+</script>
 
 </body>
 </html>
